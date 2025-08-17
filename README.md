@@ -114,21 +114,6 @@ This repository serves as a personal learning resource for:
 - Problem-solving techniques
 - C++ programming skills
 
-## 📝 Notes
-
-- Solutions are primarily in C++ for competitive programming efficiency
-- Executable files are included for quick testing
-- Problems are organized by difficulty and topic for systematic learning
-- Some solutions include multiple approaches or optimizations
-
-## 🏆 Achievements
-
-Track your progress through:
-- Contest participation records
-- Problem-solving statistics
-- Algorithm mastery across different topics
-- Performance improvements over time
-
 ---
 
 
