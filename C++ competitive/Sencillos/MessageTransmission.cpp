@@ -1,3 +1,13 @@
+/*
+ * Problem: Message Transmission Pattern Check
+ * 
+ * Check if a string has a repeating prefix pattern.
+ * Uses a KMP-like algorithm to find the longest repeating prefix.
+ * 
+ * Solution: Two-pointer approach to find the longest prefix
+ * that repeats in the string. Output "YES" if pattern found.
+ */
+
 #include <bits/stdc++.h>
 using namespace std;
 

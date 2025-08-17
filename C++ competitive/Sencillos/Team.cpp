@@ -1,3 +1,13 @@
+/*
+ * Problem: Team Problem Solving
+ * 
+ * Given n teams of 3 people, count how many teams have
+ * at least 2 members who can solve a problem.
+ * 
+ * Solution: For each team, sum the three values and check if sum > 1
+ * (meaning at least 2 people can solve the problem)
+ */
+
 #include <bits/stdc++.h>
 #include <iostream>
 #include <string>

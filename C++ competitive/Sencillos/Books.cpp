@@ -1,3 +1,13 @@
+/*
+ * Problem: Books Shelving
+ * 
+ * Calculate how many shelves are needed to store n books,
+ * where each shelf can hold exactly 5 books.
+ * 
+ * Solution: Use ceiling division - if n%5==0, shelves = n/5
+ * Otherwise, shelves = (n/5) + 1
+ */
+
 #include <bits/stdc++.h>
 using namespace std;
 #define f(i,a,b) for (int i =a; i<b; i++)

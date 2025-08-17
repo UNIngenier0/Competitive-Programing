@@ -1,3 +1,13 @@
+/*
+ * Problem: Long Words Abbreviation
+ * 
+ * Given n words, abbreviate words longer than 10 characters.
+ * Abbreviation format: first_letter + (length-2) + last_letter
+ * 
+ * Example: "internationalization" -> "i18n"
+ * Solution: Check length, if >10 create abbreviation, else keep original
+ */
+
 #include <bits/stdc++.h>
 #include <string>
 #include <typeinfo>

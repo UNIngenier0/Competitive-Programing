@@ -1,3 +1,13 @@
+/*
+ * Problem: Next Round Qualification
+ * 
+ * Given n participants and their scores, count how many advance
+ * to the next round. A participant advances if their score is
+ * >= the score of the k-th place participant.
+ * 
+ * Solution: Count all participants with score >= a[k-1]
+ */
+
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
