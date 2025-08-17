@@ -1,3 +1,13 @@
+/*
+ * Problem D: Richman Calculator
+ * 
+ * Determine if a person can become rich based on book prices and budget.
+ * Consider zero-priced books and calculate minimum cost to achieve wealth.
+ * 
+ * Solution: Handle special cases, calculate costs excluding zeros,
+ * determine if becoming rich is possible
+ */
+
 #include <bits/stdc++.h>
 using namespace std;
 #define f(i,a,b) for(int i =a; i<b; i++)

@@ -1,3 +1,12 @@
+/*
+ * Problem G: Nearly Lucky Number
+ * 
+ * Check if a number is nearly lucky by counting how many
+ * of its digits are lucky digits (4 or 7).
+ * 
+ * Solution: Count lucky digits, check if count equals a lucky digit
+ */
+
 #include <iostream>
 using namespace std;
 

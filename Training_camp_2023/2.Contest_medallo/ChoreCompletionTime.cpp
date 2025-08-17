@@ -1,3 +1,13 @@
+/*
+ * Problem A: Chore Completion Time
+ * 
+ * Calculate minimum time to complete chores across houses
+ * arranged in a circle. Time is based on distance between positions.
+ * 
+ * Solution: Track current position, calculate circular distance
+ * between consecutive chore locations
+ */
+
 #include <bits/stdc++.h>
 using namespace std;
 #define f(i,a,b) for (int i =a; i<b; i++)

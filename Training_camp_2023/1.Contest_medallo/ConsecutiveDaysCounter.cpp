@@ -1,3 +1,13 @@
+/*
+ * Problem B: Consecutive Days Counter
+ * 
+ * Count consecutive days with specific actions and calculate
+ * the maximum streak based on given conditions.
+ * 
+ * Solution: Track unknown and known days, calculate maximum streak
+ * using custom max function and conditional logic
+ */
+
 #include <bits/stdc++.h>
 using namespace std;
 

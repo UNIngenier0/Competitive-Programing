@@ -1,3 +1,14 @@
+/*
+ * Problem C: Underscore Counter
+ * 
+ * Count the number of underscores in strings with special rules:
+ * - Count consecutive underscores as one
+ * - Handle edge cases like single '^' character
+ * - Count underscore at the end if present
+ * 
+ * Solution: Iterate through string, track consecutive underscores
+ */
+
 #include <bits/stdc++.h>
 using namespace std;
 #define f(i,a,b) for (int i =a; i<b; i++)

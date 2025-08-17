@@ -1,3 +1,12 @@
+/*
+ * Problem A: Rectangle vs Square
+ * 
+ * Given width and height dimensions, determine if they form
+ * a rectangle or a square.
+ * 
+ * Solution: Compare width and height - if equal then square, else rectangle
+ */
+
 #include <bits/stdc++.h>
 using namespace std;
 
