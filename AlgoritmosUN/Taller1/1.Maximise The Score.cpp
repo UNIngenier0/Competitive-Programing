@@ -1,3 +1,13 @@
+/*
+ * Problem: Maximise The Score
+ * 
+ * Given 2n numbers, pair them up and for each pair take the minimum value.
+ * The goal is to maximize the sum of these minimum values.
+ * 
+ * Solution: Sort the array and pair consecutive elements (0,1), (2,3), etc.
+ * This ensures we get the best possible minimum values for each pair.
+ */
+
 #include <bits/stdc++.h>
 using namespace std;
 

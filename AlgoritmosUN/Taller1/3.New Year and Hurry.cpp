@@ -1,3 +1,13 @@
+/*
+ * Problem: New Year and Hurry
+ * 
+ * Given n problems and k minutes before New Year, calculate how many
+ * problems can be solved. Each problem i takes i*5 minutes.
+ * 
+ * Solution: Iterate through problems 1 to n, subtracting time for each
+ * problem from the available time (240-k minutes). Stop when time runs out.
+ */
+
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,3 +1,14 @@
+/*
+ * Problem: Binary Search Implementation
+ * 
+ * Given a sorted array and multiple queries, find the first occurrence
+ * of each query element in the array.
+ * 
+ * Solution: Use binary search to find elements efficiently in O(log n)
+ * time. For each query, find the element and then move left to find
+ * the first occurrence if there are duplicates.
+ */
+
 #include <bits/stdc++.h>
 using namespace std;
 

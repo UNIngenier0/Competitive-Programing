@@ -1,3 +1,14 @@
+/*
+ * Problem: Recovering a Small String
+ * 
+ * Given a number n, find the lexicographically smallest string where
+ * the sum of character values (a=1, b=2, ..., z=26) equals n.
+ * 
+ * Solution: Use a greedy approach - start from the end and use the
+ * largest possible character (z=26) when possible, then fill remaining
+ * positions with appropriate characters.
+ */
+
 #include <bits/stdc++.h>
 using namespace std;
 
