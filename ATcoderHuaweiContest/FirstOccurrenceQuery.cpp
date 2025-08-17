@@ -1,3 +1,16 @@
+/*
+ * Problem B: Find First Occurrence of A or B
+ * 
+ * Given a vector of integers and queries (a,b), find the first occurrence
+ * of either value a or b in the vector and output it.
+ * 
+ * Solution: For each query, iterate through the vector and output the
+ * first value that matches either a or b.
+ * 
+ * Note: The program reads n elements but n is not initialized before the loop.
+ * This appears to be a bug in the original implementation.
+ */
+
 #include <bits/stdc++.h>
 using namespace std;
 

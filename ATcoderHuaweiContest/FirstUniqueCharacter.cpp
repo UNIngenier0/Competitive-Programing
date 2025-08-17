@@ -1,3 +1,15 @@
+/*
+ * Problem A: Find First Unique Character Position
+ * 
+ * Given a string, find the position (1-indexed) of the first character
+ * that appears exactly once in the string.
+ * 
+ * Solution: Count frequency of each character, then find the first
+ * character with frequency 1 and output its position.
+ * 
+ * Example: "abcabc" -> 'b' appears once at position 2
+ */
+
 #include <bits/stdc++.h>
 using namespace std;
 
