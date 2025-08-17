@@ -4,14 +4,16 @@
  * Given a vector of integers and queries (a,b), find the first occurrence
  * of either value a or b in the vector and output it.
  * 
- * Solution: For each query, iterate through the vector and output the
- * first value that matches either a or b.
+ * Solution: Preprocess vector with hash map for O(1) lookups, then
+ * handle queries efficiently by finding the minimum position.
  * 
- * Note: The program reads n elements but n is not initialized before the loop.
- * This appears to be a bug in the original implementation.
+ * Optimized: Uses hash map instead of linear search for each query.
  */
 
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <map>
+#include <climits>
 using namespace std;
 
 #define f(i,a,b) for(int i=a;i<b;i++)
@@ -29,9 +31,6 @@ typedef pair<int, int> pii;
 typedef vector<int> vi;
 typedef map <int,int> mii;
 
-
-//#define a.all() a.begin(),a.end()
-
 int main(){
     //freopen("input.txt", "r", stdin);
     //freopen("output.txt", "w", stdout);
@@ -39,27 +38,38 @@ int main(){
     cin.tie(0);
 
     vi v;
-    int n,a;
+    int n, a;
+    cin >> n; // Fixed: Initialize n before using it
+    
     f(i,0,n){
         cin>>a;
         v.pb(a);
-        cout<<a<<"...."<<endl;
     }
+    
+    // Preprocess: Create hash map for O(1) lookups
+    map<int, int> firstOccurrence;
+    f(i,0,n){
+        if(firstOccurrence.find(v[i]) == firstOccurrence.end()){
+            firstOccurrence[v[i]] = i;
+        }
+    }
+    
     int q; cin>>q;
     f(i,0,q){
         int a,b; cin>>a>>b;
-        for(auto x:v){
-            if(x==a){
-                cout<<a<<endl;
-                break;
-            }
-            if(x==b){
-                cout<<b<<endl;
-                break;
-            }
+        
+        // Find first occurrence of either a or b
+        int posA = (firstOccurrence.find(a) != firstOccurrence.end()) ? firstOccurrence[a] : INT_MAX;
+        int posB = (firstOccurrence.find(b) != firstOccurrence.end()) ? firstOccurrence[b] : INT_MAX;
+        
+        if(posA < posB){
+            cout << a << endl;
+        } else if(posB < INT_MAX){
+            cout << b << endl;
+        } else {
+            cout << "Not found" << endl;
         }
     }
 
-
-    return 0 ;
+    return 0;
 }

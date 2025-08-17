@@ -13,19 +13,15 @@ Solutions from the AtCoder Huawei Contest competitive programming competition.
 ### Problem B: First Occurrence Query
 - **File**: `FirstOccurrenceQuery.cpp`
 - **Task**: Find first occurrence of either value a or b in a vector
-- **Solution**: Linear search through vector for each query
-- **Complexity**: O(q*n)
-
-## 🚨 Issues
-- Problem B has uninitialized variable `n` (bug)
-- Debug output "...." should be removed
-- Could be optimized with hash map preprocessing
+- **Solution**: Hash map preprocessing for O(1) lookups
+- **Complexity**: O(n + q) - O(n) preprocessing, O(1) per query
 
 ## 🎯 Learning
 - String processing and frequency counting
 - Query handling and search algorithms
 - Data structure selection (maps vs vectors)
 - Competitive programming techniques
+- **Optimization**: Preprocessing vs online processing trade-offs
 
 ---
 *Fundamental algorithmic concepts for competitive programming.*

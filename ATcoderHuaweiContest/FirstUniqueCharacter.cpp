@@ -10,7 +10,9 @@
  * Example: "abcabc" -> 'b' appears once at position 2
  */
 
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
+#include <map>
 using namespace std;
 
 #define f(i,a,b) for(int i=a;i<b;i++)
